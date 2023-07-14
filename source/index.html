@@ -1,14 +1,97 @@
 <!DOCTYPE html>
 <html class="page" lang="ru">
-  <head>
-    <meta charset="UTF-8">
-    <title>Название проекта</title>
-    <meta name="viewport" content="width=device-width,initial-scale=1">
-    <link rel="stylesheet" href="css/style.css">
-  </head>
-  <body class="page__body">
-    <header class="header">Шапка</header>
 
-    <script src="./js/script.js" defer></script>
-  </body>
+<head>
+  <meta charset="UTF-8">
+  <title>Белый сервис</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body class="page__body">
+  <header class="header">
+    <div class="header__container">
+      <a class="header__logo">
+        <picture>
+          <source media="(min-width: 768px)" srcset="./img/svg/logo-desktop.svg">
+          <source media="(max-width: 767px)" srcset="./img/svg/logo-mobile.svg">
+          <img class="header__logo-image" src="./img/svg/logo-desktop.svg" alt="Логотип магазина 'Белый сервис'."
+            width="315" height="50">
+        </picture>
+      </a>
+      <ul class="header__info">
+        <li class="header__info-item">
+          <a href="#">Контакты</a>
+        </li>
+        <li class="header__info-item header__info-item--star">
+          <a href="#">Отзывы</a>
+        </li>
+        <li class="header__info-item">
+          <a href="#">Гарантия</a>
+        </li>
+      </ul>
+      <div class="header__contacts-wrapper">
+        <p>Звоните, пн-вс 10:00 - 20:00</p>
+        <a href="tel:+73512207704">+7 351 220 77 04</a>
+      </div>
+    </div>
+    <div class="header__nav-wrapper">
+      <button class="header__nav-button" type="button">
+        <span class="visually-hidden">Открыть меню</span>
+      </button>
+      <a class="header__nav-connection" href="#">Связаться</a>
+      <div class="header__nav-menu">
+        <h2 class="header__nav-title">Меню</h2>
+        <button class="header__nav-close" type="button">
+          <span class="visually-hidden">Закрыть меню</span>
+        </button>
+      </div>
+      <ul class="header__nav nav">
+        <li class="nav__item nav__item--catalog">
+          <a href="#">Каталог</a>
+        </li>
+        <li class="nav__item nav__item--apple">
+          <a href="#">Ремонт Apple</a>
+          <svg aria-hidden="true" focusable="false" width="10" height="6" xmlns="http://www.w3.org/2000/svg">
+            <use href="./img/icons/stack.svg#arrow" />
+          </svg>
+        </li>
+        <li class="nav__item nav__item--smartphone">
+          <a href="#">Ремонт смартфонов</a>
+          <svg aria-hidden="true" focusable="false" width="10" height="6" xmlns="http://www.w3.org/2000/svg">
+            <use href="./img/icons/stack.svg#arrow" />
+          </svg>
+        </li>
+        <li class="nav__item nav__item--tablet">
+          <a href="#">Ремонт планшетов</a>
+          <svg aria-hidden="true" focusable="false" width="10" height="6" xmlns="http://www.w3.org/2000/svg">
+            <use href="./img/icons/stack.svg#arrow" />
+          </svg>
+        </li>
+        <li class="nav__item nav__item--desktop">
+          <a href="#">Ремонт ноутбуков</a>
+          <svg aria-hidden="true" focusable="false" width="10" height="6" xmlns="http://www.w3.org/2000/svg">
+            <use href="./img/icons/stack.svg#arrow" />
+          </svg>
+        </li>
+        <li class="nav__item nav__item--game">
+          <a href="#">Ремонт игровых приставок</a>
+          <svg aria-hidden="true" focusable="false" width="10" height="6" xmlns="http://www.w3.org/2000/svg">
+            <use href="./img/icons/stack.svg#arrow" />
+          </svg>
+        </li>
+      </ul>
+    </div>
+  </header>
+
+  <main>
+
+  </main>
+  <footer>
+
+  </footer>
+
+  <script src="./js/script.js" defer></script>
+</body>
+
 </html>

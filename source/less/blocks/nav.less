@@ -1,0 +1,252 @@
+.nav {
+  display: flex;
+  padding: 10px 0;
+  list-style-type: none;
+
+  @media (max-width: (@desktop - 1)) {
+    padding: 14px 0;
+  }
+
+  @media (max-width: (@tablet - 1)) {
+    top: 0;
+    left: 0;
+    padding: 20px 24px;
+    flex-direction: column;
+    background-color: @white;
+    width: 100%;
+    z-index: 5;
+  }
+}
+
+.nav__item {
+  position: relative;
+  background-repeat: no-repeat;
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 1px;
+    height: 28px;
+    background-color: @lite-gray;
+    right: -59px;
+  }
+
+  a {
+    position: relative;
+    display: block;
+    font-size: 16px;
+    padding: 7px 27px 7px 46px;
+    margin: 0 58px;
+    color: @black;
+    text-decoration: none;
+  }
+
+  &:first-child a {
+    min-width: 103px;
+    padding-left: 36px;
+    padding-right: 0;
+    margin-left: 0;
+  }
+
+  a:hover,
+  a:active {
+    color: @gray;
+  }
+
+  svg {
+    position: absolute;
+    top: 17px;
+    right: 66px;
+  }
+
+  &--catalog {
+    background-image: url("../../img/svg/catalog-icon.svg");
+    background-position: 0 50%;
+  }
+
+  &--apple {
+    background-image: url("../../img/svg/apple-icon.svg");
+    background-position: 25% 40%;
+  }
+
+  &--smartphone {
+    background-image: url("../../img/svg/smartphone-icon.svg");
+    background-position: 20% 40%;
+  }
+
+  &--tablet {
+    background-image: url("../../img/svg/tablet-icon.svg");
+    background-position: 21% 40%;
+  }
+
+  &--desktop {
+    background-image: url("../../img/svg/desktop-icon.svg");
+    background-position: 21% 40%;
+  }
+
+  &--game {
+    display: none;
+  }
+
+  @media (max-width: (@desktop-large - 1)) {
+    &::before {
+      display: none;
+    }
+
+    a {
+      font-size: 14px;
+      line-height: 17px;
+      margin: 0 0 0 30px;
+      padding: 11px 23px 11px 46px;
+    }
+
+    &:first-child a {
+      margin-left: 0;
+      padding-right: 27px;
+      font-size: 16px;
+      line-height: 20px;
+    }
+
+    &:first-child::before {
+      display: block;
+      height: 15px;
+      right: -3px;
+      top: 12px;
+    }
+
+    svg {
+      top: 17px;
+      right: 6px;
+    }
+
+    &--apple {
+      a {
+        padding: 11px 37px 11px 56px;
+      }
+
+      svg {
+        right: 17px;
+      }
+    }
+
+    &--smartphone {
+      background-position: 17% 40%;
+    }
+
+    &--tablet {
+      background-position: 19% 40%;
+    }
+  }
+
+  @media (max-width: (@desktop - 1)) {
+    a {
+      margin: 0 0 0 29px;
+      padding: 7px 27px 7px 46px;
+      font-size: 14px;
+      line-height: 17px;
+    }
+
+    &::before {
+      display: none;
+    }
+
+    svg {
+      top: 11px;
+      right: 6px;
+    }
+
+    &--catalog {
+      background-position: 0 30%;
+
+      &::before {
+        display: block;
+        height: 15px;
+        right: -2px;
+      }
+    }
+
+    &--apple {
+      background-position: 27% 27%;
+
+      a {
+        padding: 7px 37px 7px 56px;
+      }
+
+      svg {
+        padding: 16px;
+      }
+    }
+
+    &--smartphone {
+      background-position: 18% 40%;
+    }
+
+    &--tablet {
+      background-position: 19% 40%;
+    }
+
+    &--desktop {
+      display: none;
+    }
+  }
+
+  @media (max-width: (@tablet-large - 1)) {
+    a {
+      font-size: 14px;
+      line-height: 17px;
+      padding: 11px 10px 11px 36px;
+      margin: 0 0 0 23px;
+    }
+
+    &:first-child {
+      width: 49px;
+
+      a {
+        min-width: 50px;
+        color: transparent;
+      }
+    }
+
+    &--desktop {
+      display: none;
+    }
+
+    &--apple {
+      background-position: 24% 40%;
+      background-size: 16px 18px;
+    }
+
+    &--smartphone {
+      background-position: 18% 40%;
+      background-size: 20px 20px;
+    }
+
+    &--tablet {
+      background-position: 18% 40%;
+      background-size: 20px 20px;
+    }
+
+    svg {
+      display: none;
+    }
+  }
+
+  @media (max-width: (@tablet - 1)) {
+    a {
+      margin: 0;
+      padding: 0;
+    }
+
+    &--catalog {
+      display: none;
+    }
+
+    &--desktop {
+      display: block;
+    }
+
+    &--game {
+      display: block;
+    }
+  }
+}
