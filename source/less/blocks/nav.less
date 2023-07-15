@@ -3,17 +3,21 @@
   padding: 10px 0;
   list-style-type: none;
 
+  @media (max-width: (@desktop-large - 1)) {
+    padding: 9px 0;
+  }
+
   @media (max-width: (@desktop - 1)) {
-    padding: 14px 0;
+    padding: 12px 0;
+  }
+
+  @media (max-width: (@tablet-large - 1)) {
+    padding: 9px 0;
   }
 
   @media (max-width: (@tablet - 1)) {
-    top: 0;
-    left: 0;
-    padding: 20px 24px;
+    padding: 0;
     flex-direction: column;
-    background-color: @white;
-    width: 100%;
     z-index: 5;
   }
 }
@@ -28,7 +32,8 @@
     width: 1px;
     height: 28px;
     background-color: @lite-gray;
-    right: -59px;
+    top: 5px;
+    right: 0;
   }
 
   a {
@@ -41,11 +46,13 @@
     text-decoration: none;
   }
 
-  &:first-child a {
-    min-width: 103px;
-    padding-left: 36px;
-    padding-right: 0;
-    margin-left: 0;
+  &:first-child {
+    a {
+      min-width: 103px;
+      padding-left: 36px;
+      padding-right: 0;
+      margin-left: 0;
+    }
   }
 
   a:hover,
@@ -100,11 +107,13 @@
       padding: 11px 23px 11px 46px;
     }
 
-    &:first-child a {
-      margin-left: 0;
-      padding-right: 27px;
-      font-size: 16px;
-      line-height: 20px;
+    &:first-child {
+      a {
+        margin-left: 0;
+        padding-right: 27px;
+        font-size: 16px;
+        line-height: 20px;
+      }
     }
 
     &:first-child::before {
@@ -173,7 +182,7 @@
       }
 
       svg {
-        padding: 16px;
+        right: 16px;
       }
     }
 
@@ -232,21 +241,54 @@
   }
 
   @media (max-width: (@tablet - 1)) {
+    display: flex;
+    align-items: center;
+    column-gap: 7px;
+    padding: 26px 0 26px 30px;
+    border-bottom: 2px solid @extra-lite-gray;
+
     a {
       margin: 0;
       padding: 0;
+    }
+
+    svg {
+      position: static;
+      display: block;
+      transform: rotate(-90deg);
     }
 
     &--catalog {
       display: none;
     }
 
+    &--apple {
+      padding-top: 0;
+      background-position: 2px 0;
+
+      svg {
+        padding: 0;
+      }
+    }
+
+    &--smartphone {
+      background-size: 26px 26px;
+      background-position: -3px 22px;
+    }
+
+    &--tablet {
+      background-size: 26px 26px;
+      background-position: -2px 21px;
+    }
+
     &--desktop {
-      display: block;
+      background-image: url("../../img/svg/desktop-icon-mobile.svg");
+      background-position: 0 25px;
     }
 
     &--game {
-      display: block;
+      background-image: url("../../img/svg/game-icon.svg");
+      background-position: 0 22px;
     }
   }
 }

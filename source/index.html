@@ -40,51 +40,110 @@
         <span class="visually-hidden">Открыть меню</span>
       </button>
       <a class="header__nav-connection" href="#">Связаться</a>
-      <div class="header__nav-menu">
+      <div class="header__nav-container">
         <h2 class="header__nav-title">Меню</h2>
-        <button class="header__nav-close" type="button">
+        <button class="header__close-button">
           <span class="visually-hidden">Закрыть меню</span>
         </button>
+        <ul class="header__nav nav">
+          <li class="nav__item nav__item--catalog">
+            <a href="#">Каталог</a>
+          </li>
+          <li class="nav__item nav__item--apple">
+            <a href="#">Ремонт Apple</a>
+            <svg aria-hidden="true" focusable="false" width="10" height="6" xmlns="http://www.w3.org/2000/svg">
+              <use href="./img/icons/stack.svg#arrow" />
+            </svg>
+          </li>
+          <li class="nav__item nav__item--smartphone">
+            <a href="#">Ремонт смартфонов</a>
+            <svg aria-hidden="true" focusable="false" width="10" height="6" xmlns="http://www.w3.org/2000/svg">
+              <use href="./img/icons/stack.svg#arrow" />
+            </svg>
+          </li>
+          <li class="nav__item nav__item--tablet">
+            <a href="#">Ремонт планшетов</a>
+            <svg aria-hidden="true" focusable="false" width="10" height="6" xmlns="http://www.w3.org/2000/svg">
+              <use href="./img/icons/stack.svg#arrow" />
+            </svg>
+          </li>
+          <li class="nav__item nav__item--desktop">
+            <a href="#">Ремонт ноутбуков</a>
+            <svg aria-hidden="true" focusable="false" width="10" height="6" xmlns="http://www.w3.org/2000/svg">
+              <use href="./img/icons/stack.svg#arrow" />
+            </svg>
+          </li>
+          <li class="nav__item nav__item--game">
+            <a href="#">Ремонт игровых приставок</a>
+            <svg aria-hidden="true" focusable="false" width="10" height="6" xmlns="http://www.w3.org/2000/svg">
+              <use href="./img/icons/stack.svg#arrow" />
+            </svg>
+          </li>
+        </ul>
       </div>
-      <ul class="header__nav nav">
-        <li class="nav__item nav__item--catalog">
-          <a href="#">Каталог</a>
-        </li>
-        <li class="nav__item nav__item--apple">
-          <a href="#">Ремонт Apple</a>
-          <svg aria-hidden="true" focusable="false" width="10" height="6" xmlns="http://www.w3.org/2000/svg">
-            <use href="./img/icons/stack.svg#arrow" />
-          </svg>
-        </li>
-        <li class="nav__item nav__item--smartphone">
-          <a href="#">Ремонт смартфонов</a>
-          <svg aria-hidden="true" focusable="false" width="10" height="6" xmlns="http://www.w3.org/2000/svg">
-            <use href="./img/icons/stack.svg#arrow" />
-          </svg>
-        </li>
-        <li class="nav__item nav__item--tablet">
-          <a href="#">Ремонт планшетов</a>
-          <svg aria-hidden="true" focusable="false" width="10" height="6" xmlns="http://www.w3.org/2000/svg">
-            <use href="./img/icons/stack.svg#arrow" />
-          </svg>
-        </li>
-        <li class="nav__item nav__item--desktop">
-          <a href="#">Ремонт ноутбуков</a>
-          <svg aria-hidden="true" focusable="false" width="10" height="6" xmlns="http://www.w3.org/2000/svg">
-            <use href="./img/icons/stack.svg#arrow" />
-          </svg>
-        </li>
-        <li class="nav__item nav__item--game">
-          <a href="#">Ремонт игровых приставок</a>
-          <svg aria-hidden="true" focusable="false" width="10" height="6" xmlns="http://www.w3.org/2000/svg">
-            <use href="./img/icons/stack.svg#arrow" />
-          </svg>
-        </li>
-      </ul>
     </div>
   </header>
 
-  <main>
+  <main class="main">
+
+    <!-- Hero -->
+    <section class="main__hero hero">
+      <h1 class="hero__title">Сервисный центр</h1>
+      <p>Ремонт планшетов в Челябинске. Бесплатно продиагностируем и быстро починим любую поломку. <span>Гарантия 3
+          месяца</span></p>
+      <a class="hero__link" href="#">
+        <svg aria-hidden="true" focusable="false" width="12" height="18" xmlns="http://www.w3.org/2000/svg">
+          <use href="./img/icons/stack.svg#white-arrow" />
+        </svg>
+        <span>Записаться на диагностику</span>
+      </a>
+      <ul class="hero__features-list">
+        <li class="hero__features-item">
+          <div class="hero__features-logo">
+            <svg aria-hidden="true" focusable="false" width="53" height="54" xmlns="http://www.w3.org/2000/svg">
+              <use href="./img/icons/stack.svg#screwdriver" />
+            </svg>
+          </div>
+          <p>Починим даже то, от чего отказались другие</p>
+        </li>
+        <li class="hero__features-item">
+          <div class="hero__features-logo">
+            <svg aria-hidden="true" focusable="false" width="53" height="54" xmlns="http://www.w3.org/2000/svg">
+              <use href="./img/icons/stack.svg#guarantee" />
+            </svg>
+          </div>
+          <p>Гарантия нашего сервиса&nbsp;3&nbsp;месяца</p>
+        </li>
+        <li class="hero__features-item">
+          <div class="hero__features-logo">
+            <svg aria-hidden="true" focusable="false" width="53" height="54" xmlns="http://www.w3.org/2000/svg">
+              <use href="./img/icons/stack.svg#bonus" />
+            </svg>
+          </div>
+          <p>Собственная выгодная бонусная система</p>
+        </li>
+        <li class="hero__features-item">
+          <div class="hero__features-logo">
+            <svg aria-hidden="true" focusable="false" width="53" height="54" xmlns="http://www.w3.org/2000/svg">
+              <use href="./img/icons/stack.svg#loupe" />
+            </svg>
+          </div>
+          <p>Бесплатная диагностика даже при отказе от&nbsp;<span> </span>ремонта</p>
+        </li>
+      </ul>
+      <div class="hero__done-projects">
+        <span>12 585</span>
+        <p> Выполненных ремонтов</p>
+      </div>
+    </section>
+
+
+    <!-- Experts  -->
+    <section class="main__experts experts">
+      <h2 class="experts__title">Ремонт осуществляется первоклассными специалистами</h2>
+      <p>Средний опыт работы наших мастеров 4 года</p>
+
+    </section>
 
   </main>
   <footer>
