@@ -277,7 +277,14 @@
 
 .header__nav-container {
   @media (max-width: (@tablet - 1)) {
-    display: none;
+    &--closed {
+      display: none;
+    }
+
+    &--open {
+      display: block;
+      height: 1500px;
+    }
 
     min-height: 100vw;
     position: absolute;
@@ -308,6 +315,7 @@
   display: none;
 
   @media (max-width: (@tablet - 1)) {
+    display: block;
     position: absolute;
     top: 24px;
     right: 24px;
