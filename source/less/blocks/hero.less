@@ -1,6 +1,7 @@
 .hero {
   position: relative;
   padding: 118px 200px 140px;
+  box-shadow: 0 2px @extra-lite-gray;
   background-repeat: no-repeat;
   background-position: 100% 0;
   background-size: 810px auto;
@@ -25,6 +26,17 @@
 
     @media (min-resolution: 2dppx) {
       background-image: url("../../img/hero-desktop@2x.jpg");
+    }
+
+    &::before {
+      content: "";
+      position: absolute;
+      height: 30px;
+      width: 100%;
+      background-color: @white;
+      background-image: linear-gradient(0deg, rgba(255, 255, 255, 0)0, rgba(0, 0, 0, .05) 100%);
+      bottom: -28px;
+      right: 0;
     }
 
     p {
@@ -75,6 +87,10 @@
 
     @media (min-resolution: 2dppx) {
       background-image: url("../../img/hero-mobile@2x.jpg");
+    }
+
+    &::before {
+      display: none;
     }
 
     p {
@@ -306,8 +322,6 @@
       transform: scale(0.7);
     }
   }
-
-  @media (max-width: (@tablet - 1)) {}
 }
 
 .hero__done-projects {

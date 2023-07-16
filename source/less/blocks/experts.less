@@ -1,0 +1,297 @@
+.experts {
+  position: relative;
+  padding: 118px 200px 127px;
+
+  p {
+    margin: 0;
+    font-size: 26px;
+    line-height: 120%;
+    text-align: center;
+  }
+
+  @media (max-width: (@desktop-large - 1)) {
+    padding: 120px 143px 127px;
+
+    p {
+      font-size: 20px;
+    }
+  }
+
+  @media (max-width: (@desktop - 1)) {
+    padding: 80px 85px 86px;
+
+    p {
+      font-size: 16px;
+    }
+  }
+
+  @media (max-width: (@tablet-large - 1)) {
+    padding: 120px 59px 86px;
+  }
+
+  @media (max-width: (@tablet - 1)) {
+    padding: 0 24px 70px;
+
+    p {
+      font-size: 14px;
+      width: 221px;
+      margin: 0 auto;
+    }
+  }
+}
+
+.experts__wrapper {
+  padding: 80px 0 85px;
+
+  @media (max-width: (@desktop-large - 1)) {
+    padding-bottom: 90px;
+  }
+
+  @media (max-width: (@desktop - 1)) {
+    padding-top: 60px;
+    padding-bottom: 69px;
+  }
+
+  @media (max-width: (@tablet-large - 1)) {
+    padding-bottom: 67px;
+  }
+
+  @media (max-width: (@tablet - 1)) {
+    padding-top: 40px;
+    padding-bottom: 34px;
+  }
+}
+
+.experts__title {
+  font-size: 48px;
+  line-height: 100%;
+  width: 1100px;
+  margin: 0 auto;
+  text-align: center;
+  margin-bottom: 40px;
+
+  @media (max-width: (@desktop-large - 1)) {
+    width: 960px;
+    font-size: 42px;
+  }
+
+  @media (max-width: (@desktop - 1)) {
+    width: 795px;
+    font-size: 36px;
+    margin-bottom: 34px;
+  }
+
+  @media (max-width: (@tablet-large - 1)) {
+    width: 620px;
+  }
+
+  @media (max-width: (@tablet - 1)) {
+    font-size: 22px;
+    width: 327px;
+    margin-bottom: 25px;
+  }
+}
+
+.experts__item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  img {
+    width: 223px;
+    height: 223px;
+    margin-bottom: 33px;
+
+    border-radius: 50%;
+  }
+
+  h3 {
+    font-size: 26px;
+    line-height: 130%;
+    margin: 0;
+    margin-bottom: 16px;
+  }
+
+  p {
+    font-size: 18px;
+    line-height: 120%;
+    margin: 0;
+    margin-bottom: 36px;
+    min-height: 66px;
+  }
+
+  b {
+    position: relative;
+    padding-left: 19px;
+    font-size: 16px;
+    line-height: 120%;
+    font-weight: 500;
+    margin-bottom: 43px;
+
+    &::before {
+      content: "";
+      position: absolute;
+      width: 24px;
+      height: 24px;
+      top: -2px;
+      left: -15px;
+      background-image: url("../../img/svg/verification.svg");
+    }
+  }
+
+  @media (max-width: (@desktop-large - 1)) {
+    h3 {
+      font-size: 22px;
+    }
+
+    p {
+      font-size: 16px;
+      margin-bottom: 27px;
+    }
+
+    b {
+      padding-left: 26px;
+
+      &::before {
+        left: -4px;
+      }
+    }
+  }
+
+  @media (max-width: (@desktop - 1)) {
+    h3 {
+      font-size: 20px;
+    }
+
+    p {
+      width: 163px;
+      font-size: 14px;
+      min-height: 85px;
+    }
+
+    b {
+      width: 172px;
+      font-size: 14px;
+      padding-left: 22px;
+      margin-bottom: 26px;
+
+      &::before {
+        width: 16px;
+        height: 16px;
+        background-size: cover;
+        top: -4px;
+      }
+    }
+  }
+
+  @media (max-width: (@tablet-large - 1)) {
+    img {
+      width: 165px;
+      height: 165px;
+      margin-bottom: 23px;
+    }
+
+    p {
+      width: 165px;
+    }
+
+    b {
+      margin-bottom: 30px;
+
+      &::before {
+        top: -2px;
+        left: -2px;
+      }
+    }
+  }
+
+  @media (max-width: (@tablet - 1)) {
+    img {
+      width: 210px;
+      height: 210px;
+      margin-bottom: 17px;
+    }
+
+    h3 {
+      font-size: 18px;
+    }
+
+    p {
+      width: 240px;
+      min-height: 0;
+      margin-bottom: 25px;
+    }
+
+    b {
+      width: 242px;
+      padding-left: 26px;
+
+      &::before {
+        top: 8px;
+        left: 0px;
+      }
+    }
+  }
+}
+
+.experts__message {
+  position: relative;
+  padding: 16px;
+  width: 296px;
+  background-color: @extra-lite-gray;
+  border-radius: 20px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: -10px;
+    left: 128px;
+    width: 37px;
+    height: 14px;
+    background-image: url("../../img/svg/message-decoration.svg");
+  }
+
+  p {
+    width: 264px;
+    margin: 0;
+    font-size: 16px;
+    text-align: left;
+    min-height: 0;
+  }
+
+  @media (max-width: (@desktop-large - 1)) {
+    width: 279px;
+
+    p {
+      width: 231px;
+    }
+  }
+
+  @media (max-width: (@desktop - 1)) {
+    width: 243px;
+
+    &::before {
+      top: -6px;
+      left: 100px;
+    }
+
+    p {
+      font-size: 14px;
+    }
+  }
+
+  @media (max-width: (@tablet-large - 1)) {
+    padding: 12px 10px;
+    width: 197px;
+
+    p {
+      width: 177px;
+      font-size: 12px;
+    }
+  }
+
+  @media (max-width: (@tablet - 1)) {
+    width: 222px;
+    padding: 14px 10px;
+  }
+}
