@@ -4,7 +4,7 @@
   box-shadow: 0 2px @extra-lite-gray;
   background-repeat: no-repeat;
   background-position: 100% 0;
-  background-size: 810px auto;
+  background-size: 810px 100%;
   background-image: url("../../img/hero-desktop-large@1x.jpg");
 
   @media (min-resolution: 2dppx) {
@@ -34,7 +34,7 @@
       height: 30px;
       width: 100%;
       background-color: @white;
-      background-image: linear-gradient(0deg, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0.5) 100%);
+      background-image: linear-gradient(0deg, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0.05) 100%);
       bottom: -28px;
       right: 0;
     }
@@ -46,7 +46,7 @@
 
   @media (max-width: (@desktop - 1)) {
     padding: 80px 86px;
-    background-size: 390px auto;
+    background-size: 390px 100%;
     background-image: url("../../img/hero-tablet-large@1x.jpg");
 
     @media (min-resolution: 2dppx) {
@@ -62,7 +62,7 @@
 
   @media (max-width: (@tablet-large - 1)) {
     padding: 80px 59px;
-    background-size: 369px auto;
+    background-size: 369px 100%;
     background-image: url("../../img/hero-tablet@1x.jpg");
 
     @media (min-resolution: 2dppx) {
@@ -80,6 +80,7 @@
   }
 
   @media (max-width: (@tablet - 1)) {
+    width: 375px;
     padding: 60px 24px;
     margin: 0 auto;
     background-size: 155px auto;
@@ -135,6 +136,7 @@
   display: inline-block;
   padding: 24px 60px 24px 82px;
   margin-bottom: 40px;
+  max-width: 816px;
   font-size: 18px;
   line-height: 120%;
   font-weight: 700;
@@ -188,6 +190,7 @@
   @media (max-width: (@desktop-large - 1)) {
     font-size: 16px;
     padding: 20px 40px 20px 62px;
+    max-width: 679px;
 
     svg {
       top: 20px;
@@ -199,6 +202,7 @@
     font-size: 14px;
     padding: 15px 30px 17px 50px;
     margin-bottom: 32px;
+    max-width: 547px;
 
     &::before {
       left: 43px;
@@ -249,7 +253,6 @@
   @media (max-width: (@tablet - 1)) {
     width: 375px;
     margin: 0 auto;
-    // width: 327px;
     gap: 24px 23px;
     margin-bottom: 25px;
   }
@@ -352,7 +355,7 @@
   bottom: 100px;
 
   padding: 20px 40px;
-  width: 467px;
+  min-width: 467px;
 
   background-color: @white;
   display: flex;
@@ -393,7 +396,7 @@
 
   @media (max-width: (@desktop - 1)) {
     padding: 12px 23px;
-    width: 298px;
+    min-width: 298px;
     column-gap: 59px;
     right: 58px;
     bottom: 118px;

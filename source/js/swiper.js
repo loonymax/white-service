@@ -6,6 +6,7 @@ const swiper = new Swiper('.swiper', {
       slidesPerView: 1,
       slidesPerGroup: 1,
       initialSlide: 6,
+      autoHeight: true,
     },
     768: {
       slidesPerView: 3,

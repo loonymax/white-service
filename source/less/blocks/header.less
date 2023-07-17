@@ -32,8 +32,15 @@
   }
 
   @media (max-width: (@tablet - 1)) {
+    width: 375px;
+    margin: 0 auto;
     padding: 0 24px;
     position: relative;
+
+    &::before {
+      width: 210%;
+      transform: translate(25%);
+    }
   }
 }
 
@@ -141,6 +148,12 @@
   width: 293px;
   margin-left: auto;
 
+  a {
+    &:last-of-type {
+      display: none;
+    }
+  }
+
   p {
     position: relative;
     margin: 0 0 7px 0;
@@ -199,6 +212,16 @@
 
   @media (max-width: (@tablet - 1)) {
     width: 145px;
+
+    a {
+      &:first-of-type {
+        display: none;
+      }
+
+      &:last-of-type {
+        display: block;
+      }
+    }
 
     p {
       display: none;
