@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html class="page" lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Белый сервис</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link rel="stylesheet" href="vendor/swiper/swiper-bundle.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body class="page__body">
+  <header class="header">
+    <div class="header__container">
+      <a class="header__logo">
+        <picture>
+          <source media="(min-width: 768px)" srcset="./img/svg/logo-desktop.svg">
+          <source media="(max-width: 767px)" srcset="./img/svg/logo-mobile.svg">
+          <img class="header__logo-image" src="./img/svg/logo-desktop.svg" alt="Логотип магазина 'Белый сервис'."
+            width="315" height="50">
+        </picture>
+      </a>
+      <ul class="header__info">
+        <li class="header__info-item">
+          <a href="#">Контакты</a>
+        </li>
+        <li class="header__info-item header__info-item--star">
+          <a href="#">Отзывы</a>
+        </li>
+        <li class="header__info-item">
+          <a href="#">Гарантия</a>
+        </li>
+      </ul>
+      <div class="header__contacts-wrapper">
+        <p>Звоните, пн-вс 10:00 - 20:00</p>
+        <a href="tel:+73512207704">+7 351 220 77 04</a>
+        <a href="tel:+73517010337">+7 (351) 701-03-37</a>
+      </div>
+    </div>
+    <div class="header__nav-wrapper">
+      <button class="header__nav-button" type="button">
+        <span class="visually-hidden">Открыть меню</span>
+      </button>
+      <a class="header__nav-connection" href="#">Связаться</a>
+      <div class="header__nav-container header__nav-container--closed">
+        <h2 class="header__nav-title">Меню</h2>
+        <button class="header__close-button header__close-button--open">
+          <span class="visually-hidden">Закрыть меню</span>
+        </button>
+        <ul class="header__nav nav">
+          <li class="nav__item nav__item--catalog">
+            <a href="#">Каталог</a>
+          </li>
+          <li class="nav__item nav__item--apple">
+            <a href="#">Ремонт Apple</a>
+            <svg aria-hidden="true" focusable="false" width="10" height="6" xmlns="http://www.w3.org/2000/svg">
+              <use href="./img/icons/stack.svg#arrow" />
+            </svg>
+          </li>
+          <li class="nav__item nav__item--smartphone">
+            <a href="#">Ремонт смартфонов</a>
+            <svg aria-hidden="true" focusable="false" width="10" height="6" xmlns="http://www.w3.org/2000/svg">
+              <use href="./img/icons/stack.svg#arrow" />
+            </svg>
+          </li>
+          <li class="nav__item nav__item--tablet">
+            <a href="#">Ремонт планшетов</a>
+            <svg aria-hidden="true" focusable="false" width="10" height="6" xmlns="http://www.w3.org/2000/svg">
+              <use href="./img/icons/stack.svg#arrow" />
+            </svg>
+          </li>
+          <li class="nav__item nav__item--desktop">
+            <a href="#">Ремонт ноутбуков</a>
+            <svg aria-hidden="true" focusable="false" width="10" height="6" xmlns="http://www.w3.org/2000/svg">
+              <use href="./img/icons/stack.svg#arrow" />
+            </svg>
+          </li>
+          <li class="nav__item nav__item--game">
+            <a href="#">Ремонт игровых приставок</a>
+            <svg aria-hidden="true" focusable="false" width="10" height="6" xmlns="http://www.w3.org/2000/svg">
+              <use href="./img/icons/stack.svg#arrow" />
+            </svg>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </header>
+
+  <main class="main">
+
+    <!-- Hero -->
+    <section class="main__hero hero">
+      <h1 class="hero__title">Сервисный центр</h1>
+      <p>Ремонт планшетов в Челябинске. Бесплатно продиагностируем и быстро починим любую поломку. <span>Гарантия 3
+          месяца</span></p>
+      <a class="hero__link" href="#">
+        <svg aria-hidden="true" focusable="false" width="12" height="18" xmlns="http://www.w3.org/2000/svg">
+          <use href="./img/icons/stack.svg#white-arrow" />
+        </svg>
+        <span>Записаться на диагностику</span>
+      </a>
+      <ul class="hero__features-list">
+        <li class="hero__features-item">
+          <div class="hero__features-logo">
+            <svg aria-hidden="true" focusable="false" width="53" height="54" xmlns="http://www.w3.org/2000/svg">
+              <use href="./img/icons/stack.svg#screwdriver" />
+            </svg>
+          </div>
+          <p>Починим даже то, от чего отказались другие</p>
+        </li>
+        <li class="hero__features-item">
+          <div class="hero__features-logo">
+            <svg aria-hidden="true" focusable="false" width="53" height="54" xmlns="http://www.w3.org/2000/svg">
+              <use href="./img/icons/stack.svg#guarantee" />
+            </svg>
+          </div>
+          <p>Гарантия нашего сервиса&nbsp;3&nbsp;месяца</p>
+        </li>
+        <li class="hero__features-item">
+          <div class="hero__features-logo">
+            <svg aria-hidden="true" focusable="false" width="53" height="54" xmlns="http://www.w3.org/2000/svg">
+              <use href="./img/icons/stack.svg#bonus" />
+            </svg>
+          </div>
+          <p>Собственная выгодная бонусная система</p>
+        </li>
+        <li class="hero__features-item">
+          <div class="hero__features-logo">
+              <svg aria-hidden="true" focusable="false" width="53" height="54" xmlns="http://www.w3.org/2000/svg">
+                <use href="./img/icons/stack.svg#loupe" />
+              </svg>
+          </div>
+          <p>Бесплатная диагностика даже при отказе от&nbsp;<span> </span>ремонта</p>
+        </li>
+      </ul>
+      <div class="hero__done-projects">
+        <span>12 585</span>
+        <p> Выполненных ремонтов</p>
+      </div>
+    </section>
+
+
+    <!-- Experts  -->
+    <section class="main__experts experts">
+      <h2 class="experts__title">Ремонт осуществляется первоклассными специалистами</h2>
+      <p>Средний опыт работы наших мастеров 4 года</p>
+      <!-- Slider main container -->
+      <div class="experts__swiper swiper">
+        <div class="experts__wrapper swiper-wrapper">
+          <div class="experts__item swiper-slide">
+            <picture>
+              <source type="image/webp" media="(min-width: 1920px)"
+                srcset="./img/experts/expert-1@1x.webp 1x, ./img/experts/expert-1@2x.webp 2x">
+              <img src="./img/experts/expert-1@1x.webp" alt="Фото мастера" width="223" height="223">
+            </picture>
+            <h3>Илья</h3>
+            <p>Мастер по ремонту, опыт 5 лет. В&nbsp;«Белом&nbsp;Сервисе» с июля 2020</p>
+            <b>Более 4 800 выполненных работ</b>
+            <div class="experts__message">
+              <p>Определю любую причину&nbsp;<span> </span>поломки!</p>
+            </div>
+          </div>
+          <div class="experts__item swiper-slide">
+            <picture>
+              <source type="image/webp" media="(min-width: 1920px)"
+                srcset="./img/experts/expert-2@1x.webp 1x, ./img/experts/expert-2@2x.webp 2x">
+              <img src="./img/experts/expert-2@1x.webp" alt="Фото мастера" width="223" height="223">
+            </picture>
+            <h3>Александр</h3>
+            <p>Мастер по ремонту, опыт 4,5 года. В&nbsp;«Белом Сервисе» с августа 2020</p>
+            <b>Более 5 200 выполненных работ</b>
+            <div class="experts__message">
+              <p>Верну к жизни, как самые первые модели, так и новинки смартфонов.</p>
+            </div>
+          </div>
+          <div class="experts__item swiper-slide">
+            <picture>
+              <source type="image/webp" media="(min-width: 1920px)"
+                srcset="./img/experts/expert-3@1x.webp 1x, ./img/experts/expert-3@2x.webp 2x">
+              <img src="./img/experts/expert-3@1x.webp" alt="Фото мастера" width="223" height="223">
+            </picture>
+            <h3>Андрей</h3>
+            <p>Мастер по ремонту и переклейке дисплеев, опыт 5 лет. В&nbsp;«Белом&nbsp;<span> </span>Сервисе» с сентября
+              2020</p>
+            <b>Более 4 800 выполненных работ</b>
+            <div class="experts__message">
+              <p>Ремонт Apple – мой конек!</p>
+            </div>
+          </div>
+          <div class="experts__item swiper-slide">
+            <picture>
+              <source type="image/webp" media="(min-width: 1920px)"
+                srcset="./img/experts/expert-1@1x.webp 1x, ./img/experts/expert-1@2x.webp 2x">
+              <img src="./img/experts/expert-1@1x.webp" alt="Фото мастера" width="223" height="223">
+            </picture>
+            <h3>Дмитрий</h3>
+            <p>Мастер по ремонту, опыт 9 лет. В&nbsp;«Белом Сервисе» с марта 2020</p>
+            <b>Более 4 800 выполненных работ</b>
+            <div class="experts__message">
+              <p>Мы даем гарантию и&nbsp;исполняем ее. На технику – это всегда год.</p>
+            </div>
+          </div>
+          <div class="experts__item swiper-slide">
+            <picture>
+              <source type="image/webp" media="(min-width: 1920px)" srcset="./img/experts/expert-5@1x.webp">
+              <img src="./img/experts/expert-5@1x.webp" alt="Фото мастера" width="223" height="223">
+            </picture>
+            <h3>Федор</h3>
+            <p>Мастер по ремонту, опыт 1,5 года. В «Белом Сервисе» с августа 2022</p>
+            <b>Более 1 200 выполненных работ</b>
+            <div class="experts__message">
+              <p>Верну к жизни, как самые первые модели, так и новинки смартфонов.</p>
+            </div>
+          </div>
+          <div class="experts__item swiper-slide">
+            <picture>
+              <source type="image/webp" media="(min-width: 1920px)" srcset="./img/experts/expert-6@1x.webp">
+              <img src="./img/experts/expert-6@1x.webp" alt="Фото мастера" width="223" height="223">
+            </picture>
+            <h3>Даниил</h3>
+            <p>Мастер по ремонту, опыт 4,5 года. В «Белом Сервисе» с августа 2020</p>
+            <b>Более 5 200 выполненных работ</b>
+            <div class="experts__message">
+              <p>Верну к жизни, как самые первые модели, так и новинки смартфонов.</p>
+            </div>
+          </div>
+          <div class="experts__item swiper-slide">
+            <picture>
+              <source type="image/webp" media="(min-width: 1920px)"
+                srcset="./img/experts/expert-1@1x.webp 1x, ./img/experts/expert-1@2x.webp 2x">
+              <img src="./img/experts/expert-1@1x.webp" alt="Фото мастера" width="223" height="223">
+            </picture>
+            <h3>Илья</h3>
+            <p>Мастер по ремонту и переклейке дисплеев, опыт 5 лет. В&nbsp;«Белом&nbsp;Сервисе» с сентября 2020</p>
+            <b>Более 4 800 выполненных работ</b>
+            <div class="experts__message">
+              <p>Ремонт Apple – мой конек!</p>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-pagination"></div>
+      </div>
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-button-next"></div>
+    </section>
+
+    <!-- Service centers -->
+    <section class="main__centers centers">
+      <div class="centers__wrapper">
+        <h2 class="centers__title">Сервисные центры</h2>
+        <p>Первый сервисный центр Белый Сервис распахнул свои двери 28 марта 2012 года по адресу г. Челябинск, ул.
+          Энгельса 75. </p>
+        <p>На текущий момент «Белый Сервис» имеет три филиала со своими приемщиками и мастерами. Гибко распределяем
+          рабочую нагрузку: если персонал на одной из точек перегружен заказами, то часть работ передается их менее
+          загруженным коллегам из другого филиала.
+        </p>
+        <a class="centers__link" href="#">
+          <span>Показать адреса</span>
+        </a>
+      </div>
+      <div class="centers__img-wrapper centers__img-wrapper--first">
+        <picture>
+          <source type="image/webp" media="(min-width: 1920px)"
+            srcset="./img/centers/centers-1-desktop@1x.webp 1x, ./img/centers/centers-1-desktop@2x.webp 2x">
+          <source type="image/webp" media="(min-width: 1366px)"
+            srcset="./img/centers/centers-1-tablet-large@1x.webp 1x, ./img/centers/centers-1-tablet-large@2x.webp 2x">
+          <source type="image/webp" media="(min-width: 375px)"
+            srcset="./img/centers/centers-1-tablet@1x.webp 1x, ./img/centers/centers-1-tablet@2x.webp 2x">
+          <img src="./img/centers/centers-1-desktop@1x.webp" alt="Фото сервисного центра" width="745" height="478">
+        </picture>
+      </div>
+      <div class="centers__img-wrapper">
+        <picture>
+          <source type="image/webp" media="(min-width: 1920px)"
+            srcset="./img/centers/centers-2-desktop@1x.webp 1x, ./img/centers/centers-2-desktop@2x.webp 2x">
+          <source type="image/webp" media="(min-width: 1366px)"
+            srcset="./img/centers/centers-2-tablet-large@1x.webp 1x, ./img/centers/centers-2-tablet-large@2x.webp 2x">
+          <source type="image/webp" media="(min-width: 375px)"
+            srcset="./img/centers/centers-2-tablet@1x.webp 1x, ./img/centers/centers-2-tablet@2x.webp 2x">
+          <img src="./img/centers/centers-2-desktop@1x.webp" alt="Фото сервисного центра" width="744" height="448">
+        </picture>
+      </div>
+      <div class="centers__img-wrapper">
+        <picture>
+          <source type="image/webp" media="(min-width: 1920px)"
+            srcset="./img/centers/centers-3-desktop@1x.webp 1x, ./img/centers/centers-3-desktop@2x.webp 2x">
+          <source type="image/webp" media="(min-width: 1366px)"
+            srcset="./img/centers/centers-3-tablet-large@1x.webp 1x, ./img/centers/centers-3-tablet-large@2x.webp 2x">
+          <source type="image/webp" media="(min-width: 375px)"
+            srcset="./img/centers/centers-3-tablet@1x.webp 1x, ./img/centers/centers-3-tablet@2x.webp 2x">
+          <img src="./img/centers/centers-3-desktop@1x.webp" alt="Фото сервисного центра" width="744" height="448">
+        </picture>
+      </div>
+    </section>
+  </main>
+  <footer>
+
+  </footer>
+
+  <script src="./vendor/swiper/swiper-bundle.js"></script>
+  <script src="./js/script.js" type="module"></script>
+</body>
+
+</html>
