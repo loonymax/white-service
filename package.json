@@ -54,6 +54,7 @@
   },
   "type": "module",
   "dependencies": {
+    "gh-pages": "^5.0.0",
     "swiper": "^10.0.4"
   }
 }
