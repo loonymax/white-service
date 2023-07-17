@@ -148,12 +148,6 @@
   width: 293px;
   margin-left: auto;
 
-  a {
-    &:last-of-type {
-      display: none;
-    }
-  }
-
   p {
     position: relative;
     margin: 0 0 7px 0;
@@ -184,6 +178,10 @@
     background-image: url("../../img/svg/phone.svg");
     background-repeat: no-repeat;
     background-position: 0 50%;
+
+    &:last-of-type {
+      display: none;
+    }
   }
 
   a:hover,
@@ -213,16 +211,6 @@
   @media (max-width: (@tablet - 1)) {
     width: 145px;
 
-    a {
-      &:first-of-type {
-        display: none;
-      }
-
-      &:last-of-type {
-        display: block;
-      }
-    }
-
     p {
       display: none;
     }
@@ -233,6 +221,14 @@
       font-weight: 600;
       line-height: 20px;
       padding: 2px 0 0 0;
+
+      &:first-of-type {
+        display: none;
+      }
+
+      &:last-of-type {
+        display: block;
+      }
     }
   }
 }
